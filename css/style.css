@@ -139,14 +139,35 @@ main {
       color: #43827c; /* couleur du texte */
       font-weight: bold;
       font-size: 2em;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.6); /* effet ombre pour lisibilité */
+      text-shadow: 0 1px 2px rgba(0,0,0,0.9); /* effet ombre pour lisibilité */
       pointer-events: none; 
       user-select: none;
       background-color: #bfd4ce ;
       width: 100%;
 }
 
+/*BOUTONS*/
+.btn-emblem {
+    background-color:#43827c ;
+    padding: 5%;
+    clip-path: polygon(5% 0%, 95% 0%, 100% 15%, 100% 85%, 95% 100%, 5% 100%, 0% 85%, 0% 15% );
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #bfd4ce;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.6); /* effet ombre pour lisibilité */
+}
 
+.btn-emblem-border {
+    width: 80%;
+    background-color:#bfd4ce ;
+    padding: 5px;
+    clip-path: polygon(5% 0%, 95% 0%, 100% 15%, 100% 85%, 95% 100%, 5% 100%, 0% 85%, 0% 15% );
+}
+
+.btn-retour {
+  margin: 30px 0px 20px 0px;
+}
 
 
 
@@ -164,11 +185,11 @@ main {
   flex-direction: column;
   align-items: center;
   width: 80%;
-  background-color: #726255da;
-  color: #ecb939 ;
+  background-color: #bfd4ceda;
+  color: #43827c ;
   text-shadow: 0 2px 4px rgba(0,0,0,0.6); 
   padding: 10px;
-  box-shadow: 0 0 30px 15px #726255;
+  box-shadow: 0 0 30px 15px #bfd4ce;
   font-weight: 500;
   font-size: 20px;
   margin: 30px;
@@ -201,15 +222,15 @@ main {
   height: 200px;
   border-radius: 50%;
   overflow: hidden;
-  background-color: #f0c75e ;
+  background-color: #43827c ;
   display: flex;
   padding: 5px;
-  box-shadow: 0 0 5px 5px #f0c75e;
+  box-shadow: 0 0 5px 5px #43827c;
   margin: 20px;
 }
 
 .cercle img {
-  background-color:#ecb939;
+  background-color:#43827c;
   border-radius: 50%;
 }
 
@@ -221,9 +242,9 @@ main {
 }
 
 #box-arbre {
-  background-color: #726255da;
+  background-color: #bfd4ce;
   padding: 10px;
-  box-shadow: 0 0 30px 15px #726255;
+  box-shadow: 0 0 30px 15px #bfd4ce;
 }
 
 .gold-divider {
@@ -233,7 +254,7 @@ main {
   background: linear-gradient(
   to right,
   transparent,
-  #ecb939 50%,
+  #43827c 50%,
   transparent
 );
   margin: 1rem 0;
