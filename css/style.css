@@ -1,0 +1,315 @@
+/*RESET CSS*/
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  img, body, html {
+    color-scheme: only light;
+}
+
+  /*BODY*/
+
+  @font-face {
+    font-family: "Cormorant Garamond";
+    src: url("/fonts/CormorantGaramond-VariableFont_wght.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: url('https://girah.github.io/Hogoki-Family/img/background.jpg');
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    
+    font-family: "Cormorant Garamond", serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 100%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+/*HEADER*/
+header{
+    padding: 10px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    min-width: 300px;
+}
+
+/*MAIN*/
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Index Emblem */
+
+.box-emblem {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    max-width: 300px;
+    margin-top: 10px;
+    transition: transform 0.3s ease; /* animation fluide */
+}
+
+.box-emblem:hover {
+    transform: scale(1.1); /* zoom à 110% de taille initiale */
+}
+
+.emblem {
+    position: relative;
+    width: 95%;
+    clip-path: polygon(10% 1%, 90% 1%, 95% 5%, 95% 75%, 50% 96%, 5% 75%, 5% 5% );
+    overflow: hidden;
+    background-color:#43827c;
+}
+
+.emblem img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.emblem-border {
+    width: 100%;
+    clip-path: polygon(10% 0%, 90% 0%, 95% 5%, 95% 75%, 50% 98%, 5% 75%, 5% 5%);
+    background-color:#9EB0B5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    position: relative; /* essentiel pour positionner absolument le texte enfant */
+}
+  
+.emblem-text {
+      position: absolute;
+      bottom: 20%; /* place le texte vers le bas (ajuste selon tes préférences) */
+      text-align: center;
+      color: #43827c; /* couleur du texte */
+      font-weight: bold;
+      font-size: 2em;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.6); /* effet ombre pour lisibilité */
+      pointer-events: none; 
+      user-select: none;
+      background-color: #9EB0B5 ;
+      width: 100%;
+}
+
+
+
+
+
+
+/*BOUTONS*/
+
+.btn-retour {
+  margin: 30px 0px 20px 0px;
+}
+
+/*DIV DE TEXTE*/
+
+.paragraphe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  background-color: #726255da;
+  color: #ecb939 ;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6); 
+  padding: 10px;
+  box-shadow: 0 0 30px 15px #726255;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 30px;
+}
+
+.paragraphe span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.emblem-para {
+  width: 80%;
+  margin : 20px;
+}
+
+.txt-pres {
+  white-space: pre-line;
+  font-size: 25px;
+}
+
+
+.txt-pres span {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 25px;
+}
+
+.cercle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #f0c75e ;
+  display: flex;
+  padding: 5px;
+  box-shadow: 0 0 5px 5px #f0c75e;
+  margin: 20px;
+}
+
+.cercle img {
+  background-color:#ecb939;
+  border-radius: 50%;
+}
+
+.txt-img, .img-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0px 20px 0px;
+}
+
+#box-arbre {
+  background-color: #726255da;
+  padding: 10px;
+  box-shadow: 0 0 30px 15px #726255;
+}
+
+.gold-divider {
+  border: none;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(
+  to right,
+  transparent,
+  #ecb939 50%,
+  transparent
+);
+  margin: 1rem 0;
+}
+
+.txt-titre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-size: 35px;
+}
+
+
+
+/*FOOTER*/
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #726255;
+    color: #ecb939;
+    width: 100%;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.6); /* effet ombre pour lisibilité */
+}
+
+
+/*RESPONSIVE*/
+/* Tablette (à partir de 768px) */
+@media screen and (min-width: 768px) {
+    #main-index {
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .main-histoire {
+      max-width: 1000px;
+    }
+
+    .img-txt {
+      padding: 2ch;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .txt-img {
+      padding: 20px;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .cercle {
+      width: 30%;
+      width: 200px;
+    }
+    .txt-para, .txt-pres {
+      width: 70%;
+      min-width: 300px;
+      max-width: 750px;
+    }
+
+    .emblem-para {
+      width: 30%;
+    }
+
+    
+}
+
+/* Bureau (à partir de 1024px) */
+@media screen and (min-width: 1024px) {
+    main {
+        font-size: 18px;
+    }
+}
