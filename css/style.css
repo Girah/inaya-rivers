@@ -54,7 +54,7 @@
 }
 
 body {
-    background-image: url('https://girah.github.io/Hogoki-Family/img/background.jpg');
+    background-image: url('../img/background.jpg');
     background-size: cover; 
     background-position: center center; 
     background-repeat: no-repeat;
@@ -124,7 +124,7 @@ main {
 .emblem-border {
     width: 100%;
     clip-path: polygon(10% 0%, 90% 0%, 95% 5%, 95% 75%, 50% 98%, 5% 75%, 5% 5%);
-    background-color:#9EB0B5;
+    background-color:#bfd4ce;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,7 +142,7 @@ main {
       text-shadow: 0 2px 4px rgba(0,0,0,0.6); /* effet ombre pour lisibilité */
       pointer-events: none; 
       user-select: none;
-      background-color: #9EB0B5 ;
+      background-color: #bfd4ce ;
       width: 100%;
 }
 
@@ -253,8 +253,8 @@ main {
 footer {
     text-align: center;
     padding: 5px;
-    background-color: #726255;
-    color: #ecb939;
+    background-color: #bfd4ce;
+    color: #43827c;
     width: 100%;
     font-weight: bold;
     text-shadow: 0 2px 4px rgba(0,0,0,0.6); /* effet ombre pour lisibilité */
