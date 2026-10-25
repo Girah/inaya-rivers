@@ -54,7 +54,7 @@
 }
 
 body {
-    background-image: url('../img/background.jpg');
+    background-image: url('../img/background.png');
     background-size: cover; 
     background-position: center center; 
     background-repeat: no-repeat;
@@ -124,7 +124,7 @@ main {
 .emblem-border {
     width: 100%;
     clip-path: polygon(10% 0%, 90% 0%, 95% 5%, 95% 75%, 50% 98%, 5% 75%, 5% 5%);
-    background-color:#bfd4ce;
+    background-color:#132124;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,29 +138,29 @@ main {
       text-align: center;
       color: #43827c; /* couleur du texte */
       font-weight: bold;
-      font-size: 2em;
+      font-size: 1.7em;
       text-shadow: 0 1px 2px rgba(0,0,0,0.9); /* effet ombre pour lisibilité */
       pointer-events: none; 
       user-select: none;
-      background-color: #bfd4ce ;
+      background-color: #132124 ;
       width: 100%;
 }
 
 /*BOUTONS*/
 .btn-emblem {
-    background-color:#43827c ;
+    background-color:#132124 ;
     padding: 5%;
     clip-path: polygon(5% 0%, 95% 0%, 100% 15%, 100% 85%, 95% 100%, 5% 100%, 0% 85%, 0% 15% );
     font-size: 1.8em;
     font-weight: bold;
-    color: #bfd4ce;
+    color: #43827c;
     text-align: center;
     text-shadow: 0 2px 4px rgba(0,0,0,0.6); /* effet ombre pour lisibilité */
 }
 
 .btn-emblem-border {
     width: 80%;
-    background-color:#bfd4ce ;
+    background-color:#43827c ;
     padding: 5px;
     clip-path: polygon(5% 0%, 95% 0%, 100% 15%, 100% 85%, 95% 100%, 5% 100%, 0% 85%, 0% 15% );
 }
@@ -185,11 +185,11 @@ main {
   flex-direction: column;
   align-items: center;
   width: 80%;
-  background-color: #bfd4ceda;
-  color: #43827c ;
+  background-color: #132124 ;
+  color: #43827c; ;
   text-shadow: 0 2px 4px rgba(0,0,0,0.6); 
   padding: 10px;
-  box-shadow: 0 0 30px 15px #bfd4ce;
+  box-shadow: 0 0 30px 15px #132124;
   font-weight: 500;
   font-size: 20px;
   margin: 30px;
@@ -274,7 +274,7 @@ main {
 footer {
     text-align: center;
     padding: 5px;
-    background-color: #bfd4ce;
+    background-color: #132124;
     color: #43827c;
     width: 100%;
     font-weight: bold;
