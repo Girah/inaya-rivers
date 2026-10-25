@@ -217,6 +217,10 @@ main {
   font-size: 25px;
 }
 
+.txt-para {
+  white-space: pre-line;
+}
+
 .cercle {
   width: 200px;
   height: 200px;
