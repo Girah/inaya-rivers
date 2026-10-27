@@ -208,6 +208,9 @@ main {
 .txt-pres {
   white-space: pre-line;
   font-size: 25px;
+  height: 100%;
+  justify-content: center;
+
 }
 
 
@@ -216,6 +219,8 @@ main {
   text-decoration: underline;
   font-size: 25px;
 }
+
+
 
 .txt-para {
   white-space: pre-line;
